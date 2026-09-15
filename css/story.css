@@ -218,7 +218,6 @@ footer {
 
 }
 
-/* 이야기 사이 여백과 읽기 편한 본문 */
 .section1 { padding: var(--section-space) 0 88px; }
 .section2 article { margin-bottom: 56px; background: #eee4d4; }
 .section2 article:nth-child(even) { background: #e4eadc; }
@@ -249,7 +248,6 @@ footer {
     .section4 h2 { font-size: 28px; }
 }
 
-/* 같은 화면에서는 모든 이야기 카드의 크기를 동일하게 유지 */
 .section2 {
     display: grid;
     grid-template-columns: minmax(0, 1fr);

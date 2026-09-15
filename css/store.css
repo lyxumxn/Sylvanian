@@ -143,7 +143,7 @@
 
 }
 
-/* 상품과 배경의 대비, 태블릿 2열 배치 */
+
 .section1 { padding: var(--section-space) 0 88px; }
 .filters { background: #efe4d3; }
 .section2 .card { background: #e8dfd0; }
@@ -162,7 +162,6 @@
     .section2 .card h2 { font-size: 16px; margin: 10px; }
 }
 
-/* 화면 전체 너비로 펼쳐지는 스토리 히어로 */
 .store-hero {
     position: relative;
     display: grid;
@@ -203,7 +202,7 @@ footer { margin-top: 0; }
     .store-hero .button { margin-top: 24px; }
 }
 
-/* 카드 안쪽 여백과 텍스트 시작선을 통일 */
+
 .section2 .card { border: 0; border-radius: 16px; padding: 20px; }
 .section2 .photo { border-radius: 10px; overflow: hidden; }
 .section2 .card .label { margin: 18px 0 4px; }
@@ -216,7 +215,7 @@ footer { margin-top: 0; }
     .section2 .card details { margin-top: 16px; }
 }
 
-/* A안: 파스텔 쇼룸 사진 + 밝은 상품 정보 */
+
 body.catalog-page #products .card {
     --showroom-color: #e1e8d3;
     padding: 0;

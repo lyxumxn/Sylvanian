@@ -445,7 +445,7 @@ main .button {
 
 }
 
-/* 섹션별로 다른 구성과 충분한 여백 */
+
 .section2 { padding: var(--section-space) 0 0; }
 .section3 { padding: var(--section-space) 0; }
 main .title { margin-bottom: 40px; }
@@ -502,7 +502,6 @@ main .title { margin-bottom: 40px; }
     .section4 { padding-bottom: 0; }
 }
 
-/* 사진과 내용을 같은 여백과 정렬로 연결 */
 .section2 .card { padding: 20px; text-align: left; border-radius: 16px; }
 .section2 .card h3 { margin: 20px 0 6px; }
 .section2 .desc { min-height: 0; line-height: 1.7; }
