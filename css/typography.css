@@ -1,0 +1,101 @@
+/* 로컬 웹폰트와 사이트 공통 타이포그래피 */
+@font-face {
+    font-family: "Gowun Dodum";
+    src: url("../font/Gowun_Dodum/GowunDodum-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Pretendard";
+    src: url("../font/Pretendard-1.3.9/web/static/woff2/Pretendard-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Pretendard";
+    src: url("../font/Pretendard-1.3.9/web/static/woff2/Pretendard-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+:root {
+    --font-body: "Pretendard", "Malgun Gothic", sans-serif;
+    --font-title: "Gowun Dodum", sans-serif;
+    --type-title: clamp(28px, 3vw, 40px);
+    --type-product: clamp(18px, 1.5vw, 22px);
+    --type-body: clamp(15px, 1.2vw, 17px);
+    --type-description: clamp(14px, 1.12vw, 16px);
+}
+body {
+    font-family: var(--font-body);
+    font-size: var(--type-body);
+    font-weight: 400;
+    font-synthesis: none;
+}
+body p, body input, body .logo span, body .values span, body .badge {
+    font-family: var(--font-body);
+    font-weight: 400;
+}
+body main .section1 h1,
+body main .section4 h2,
+body main .store-hero h2,
+body main .title .label,
+body main .section3 > h2,
+body main .section2 article:not(.card) h2 {
+    font-family: var(--font-title);
+    font-size: var(--type-title);
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0;
+}
+body main .title h2 { font-family: var(--font-body); font-size: clamp(18px, 1.5vw, 22px); font-weight: 600; }
+/* 영어 섹션 제목은 고운돋움의 획을 보강해 강조 */
+body main .title .label,
+body main .section1:not([data-banner]) h1,
+body main .section3 > h2 {
+    -webkit-text-stroke: 0.6px currentColor;
+}
+body main .section4 .label,
+body main .store-hero .label {
+    font-weight: 600;
+}
+/* 단일 굵기인 고운돋움의 배너 제목만 획을 살짝 보강 */
+body main .section1[data-banner] h1,
+body main .section4 .copy h2,
+body main .store-hero h2 {
+    -webkit-text-stroke: 0.35px currentColor;
+}
+body main .section2 .card h2, body main .section2 .card h3,
+body main .section5 .card h3, body main .categories h3 {
+    font-family: var(--font-body);
+    font-size: var(--type-product);
+    font-weight: 600;
+    line-height: 1.6;
+}
+body header nav > a, body .help summary, body .visit,
+body .button, body .card .more, body .filters button,
+body .section2 summary, body .back-to-top, body footer a {
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-weight: 600;
+}
+body .section1 p, body .section4 p,
+body .section2 article:not(.card) p, body .values p {
+    font-size: var(--type-body);
+    font-weight: 400;
+}
+body main .title > p:last-child,
+body .section2 .desc, body .categories p,
+body .card .label, body .section2 details p,
+body .store-hero-description, body .store-hero .label {
+    font-family: var(--font-body);
+    font-size: var(--type-description);
+    font-weight: 400;
+}
+body strong, body h3 { font-weight: 600; }
+@media (max-width: 600px) {
+    body .button, body .card .more, body .filters button,
+    body .section2 summary, body .back-to-top { font-size: 15px; }
+}
