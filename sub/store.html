@@ -3,13 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>스토어 | 실바니안 패밀리</title>
+        <title>카달로그 | 실바니안 패밀리</title>
         <link rel="icon" href="../favicon/favicon.ico">
         <link rel="stylesheet" href="../css/common.css">
         <link rel="stylesheet" href="../css/store.css">
+        <link rel="stylesheet" href="../css/typography.css">
+        <link rel="stylesheet" href="../css/responsive.css">
         <script src="../script/site.js" defer></script>
     </head>
-    <body>
+    <body class="catalog-page">
         <a class="skip" href="#content">본문 바로가기</a>
         <div class="notice">작은 세상, 다정한 이야기 · 실바니안 패밀리</div>
         <!-- 헤더 -->
@@ -19,18 +21,18 @@
             </a>
             <nav aria-label="주 메뉴">
                 <a href="../index.html">홈</a>
-                <a href="../sub/store.html" aria-current="page">스토어</a>
+                <a href="../sub/store.html" aria-current="page">카달로그</a>
                 <a href="../sub/story.html">실바니안 이야기</a>
-                <a href="store.html#search">스토어검색</a>
+                <a href="store.html#search">카달로그검색</a>
                 <details class="help">
                     <summary>고객센터</summary>
                     <div class="helpbox">
                         <h2>이용 안내</h2>
                         <h3>상품은 어떻게 찾나요?</h3>
-                        <p>스토어에서 카테고리를 선택하거나 상품 이름을 검색해 보세요.</p>
+                        <p>카달로그에서 카테고리를 선택하거나 상품 이름을 검색해 보세요.</p>
                         <a href="store.html#search">상품 검색하기</a>
                         <h3>상품 설명은 어디서 보나요?</h3>
-                        <p>스토어 상품 카드의 ‘자세히 보기’를 누르면 설명이 펼쳐집니다.</p>
+                        <p>카달로그 상품 카드의 ‘자세히 보기’를 누르면 설명이 펼쳐집니다.</p>
                     </div>
                 </details>
             </nav>
@@ -38,9 +40,9 @@
         </header>
         <main id="content">
 
-            <!-- 스토어 소개 -->
+            <!-- 카달로그 소개 -->
             <section class="section1 inner">
-                <h1>STORE</h1>
+                <h1>CATALOG</h1>
                 <img class="flower" src="../image/mainflower.png" alt="">
                 <p>Sylvanian Families Collection</p>
             </section>
@@ -346,17 +348,20 @@
                 <p id="empty" class="empty" hidden>검색 결과가 없어요. 다른 이름으로 찾아보세요.</p>
             </section>
 
-            <!-- 스토리 배너 -->
-            <section class="section3 inner">
-                <img src="../image/store/하단섹션배너.png" alt="실바니안 친구들의 즐거운 하루" loading="lazy">
-                <div>
+            <!-- 스토리 히어로 -->
+            <section class="store-hero" aria-labelledby="store-hero-title">
+                <img src="../image/store/하단섹션배너.png" width="2172" height="724" alt="크리스마스 트리와 벽난로 앞에 모인 토끼 가족" loading="lazy">
+                <div class="inner">
+                    <div class="store-hero-copy">
                     <p class="label">MORE THAN A LITTLE TOY</p>
-                    <h2>
+                    <h2 id="store-hero-title">
                         작은 친구와 함께,
                         <br>
                         상상은 더 넓게
                     </h2>
+                    <p class="store-hero-description">다정한 친구들과 꾸미는 작은 세상.<br> 함께하는 순간마다 새로운 이야기가 시작돼요.</p>
                     <a class="button" href="story.html">친구들의 이야기 만나기</a>
+                    </div>
                 </div>
             </section>
         </main>
@@ -368,9 +373,9 @@
                     <span>마음이 머무는 작은 세상</span>
                 </div>
                 <div>
-                    <a href="../sub/store.html">스토어</a>
+                    <a href="../sub/store.html">카달로그</a>
                     <a href="../sub/story.html">브랜드 이야기</a>
-                    <a href="#">맨 위로 ↑</a>
+                    <a href="#">TOP</a>
                 </div>
             </div>
             <div class="inner credit">
