@@ -10,7 +10,7 @@ if (navigation) {
   toggle.setAttribute("aria-controls", navigation.id);
   header.insertBefore(toggle, navigation);
   header.classList.add("has-menu-toggle");
-  const mobileMenu = window.matchMedia("(max-width: 1050px)");
+  const mobileMenu = window.matchMedia("(max-width: 1024px)");
 
   function setMenu(open) {
     header.classList.toggle("menu-open", open);
@@ -134,3 +134,19 @@ if (banner) {
         start();
     });
 }
+
+// 모든 페이지에서 따라오는 맨 위로 버튼
+const backToTop = document.createElement("button");
+backToTop.type = "button";
+backToTop.className = "back-to-top";
+backToTop.setAttribute("aria-label", "맨 위로 이동");
+backToTop.textContent = "TOP";
+backToTop.hidden = window.scrollY < 300;
+document.body.append(backToTop);
+window.addEventListener("scroll", () => {
+  backToTop.hidden = window.scrollY < 300;
+}, { passive: true });
+backToTop.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth" });
+  header?.querySelector(".logo")?.focus({ preventScroll: true });
+});
