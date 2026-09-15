@@ -1,0 +1,219 @@
+/* 이야기 제목 */
+.section1 {
+    text-align: center;
+    padding: 45px 0 30px;
+}
+
+.section1 h1 {
+    letter-spacing: 3px;
+}
+
+.section1 > p {
+    color: #687550;
+}
+
+/* 마을 이야기 */
+.section2 article {
+    display: flex;
+    margin-bottom: 28px;
+    border: 1px solid #e5ceb5;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fffcf7;
+}
+
+.section2 article > img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.section2 article > div {
+    width: 50%;
+    padding: 42px;
+}
+
+.section2 article:nth-child(even) > img {
+    order: 2;
+}
+
+.section2 article h2 {
+    font-family: "Batang", serif;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section2 article p {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+/* 브랜드 가치 */
+.section3 {
+    text-align: center;
+    padding: 10px 0 35px;
+}
+
+.section3 > h2 {
+    font-family: Georgia, serif;
+    letter-spacing: 3px;
+}
+
+.values {
+    display: flex;
+    gap: 25px;
+}
+
+.values article {
+    background: #f8efdf;
+    width: calc((100% - 50px) / 3);
+    padding: 30px 20px;
+    border: 1px solid #e5ceb5;
+    border-radius: 8px;
+}
+
+.values span {
+    display: inline-block;
+    font-family: Georgia, serif;
+    color: #b69a72;
+    font-size: 34px;
+}
+
+.values h3 {
+    color: #a94438;
+    margin: 10px 0;
+}
+
+.values p {
+    font-size: 16px;
+}
+
+/* 히어로 */
+.section4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 540px;
+    margin-top: 30px;
+    overflow: hidden;
+    background: #fbe9e1;
+}
+
+.section4 > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+}
+
+.section4 .inner {
+    position: relative;
+}
+
+.section4 .copy {
+    width: 52%;
+    margin-left: auto;
+    padding: 65px 0 65px 35px;
+}
+
+.section4 .label {
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.section4 h2 {
+    margin-bottom: 24px;
+    font-family: "Batang", serif;
+    font-size: 44px;
+    line-height: 1.5;
+}
+
+.section4 .button {
+    margin-top: 30px;
+    padding: 14px 30px;
+}
+
+footer {
+    margin-top: 0;
+}
+
+@media (max-width: 800px) {
+    .section2 article > div {
+        padding: 25px;
+    }
+
+    .section2 article h2 {
+        font-size: 24px;
+    }
+
+    .section4 {
+        min-height: 450px;
+    }
+
+    .section4 .copy {
+        width: 52%;
+        padding: 40px 0 40px 20px;
+    }
+
+    .section4 h2 {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .section1 h1 {
+        font-size: 29px;
+    }
+
+    .section2 article {
+        flex-direction: column;
+    }
+
+    .section2 article > img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .section2 article:nth-child(even) > img {
+        order: 0;
+    }
+
+    .section2 article > div {
+        width: 100%;
+    }
+
+    .values {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .values article {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .section4 {
+        display: block;
+        min-height: 0;
+    }
+
+    .section4 > img {
+        position: static;
+        height: 280px;
+        object-position: left center;
+    }
+
+    .section4 .copy {
+        width: 100%;
+        padding: 30px 0 45px;
+        text-align: center;
+    }
+
+    .section4 h2 {
+        font-size: 30px;
+    }
+
+}

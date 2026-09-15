@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>스토어 | 실바니안 패밀리</title>
+        <link rel="icon" href="../favicon/favicon.ico">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/store.css">
+        <script src="../script/site.js" defer></script>
+    </head>
+    <body>
+        <a class="skip" href="#content">본문 바로가기</a>
+        <div class="notice">작은 세상, 다정한 이야기 · 실바니안 패밀리</div>
+        <!-- 헤더 -->
+        <header class="inner">
+            <a class="logo" href="../index.html">
+                <img src="../image/logo_sp.png" alt="실바니안 패밀리">
+            </a>
+            <nav aria-label="주 메뉴">
+                <a href="../index.html">홈</a>
+                <a href="../sub/store.html" aria-current="page">스토어</a>
+                <a href="../sub/story.html">실바니안 이야기</a>
+                <a href="store.html#search">스토어검색</a>
+                <details class="help">
+                    <summary>고객센터</summary>
+                    <div class="helpbox">
+                        <h2>이용 안내</h2>
+                        <h3>상품은 어떻게 찾나요?</h3>
+                        <p>스토어에서 카테고리를 선택하거나 상품 이름을 검색해 보세요.</p>
+                        <a href="store.html#search">상품 검색하기</a>
+                        <h3>상품 설명은 어디서 보나요?</h3>
+                        <p>스토어 상품 카드의 ‘자세히 보기’를 누르면 설명이 펼쳐집니다.</p>
+                    </div>
+                </details>
+            </nav>
+            <a class="visit" href="../sub/store.html">로그인</a>
+        </header>
+        <main id="content">
+
+            <!-- 스토어 소개 -->
+            <section class="section1 inner">
+                <h1>STORE</h1>
+                <img class="flower" src="../image/mainflower.png" alt="">
+                <p>Sylvanian Families Collection</p>
+            </section>
+
+            <!-- 상품 목록 -->
+            <section class="section2 inner" aria-label="상품 목록">
+                <div class="filters" aria-label="상품 카테고리">
+                    <button type="button" data-category="전체" aria-pressed="true">전체</button>
+                    <button type="button" data-category="가족" aria-pressed="false">가족</button>
+                    <button type="button" data-category="집" aria-pressed="false">집</button>
+                    <button type="button" data-category="가구세트" aria-pressed="false">가구세트</button>
+                    <button type="button" data-category="소품" aria-pressed="false">소품</button>
+                    <button type="button" data-category="아기소품" aria-pressed="false">아기소품</button>
+                </div>
+                <div class="toolbar">
+                    <p aria-live="polite">
+                        총
+                        <strong id="count">25</strong>
+                        개의 친구와 소품
+                    </p>
+                    <label class="search">
+                        상품 검색
+                        <input type="search" id="search" placeholder="어떤 친구를 찾으세요?">
+                    </label>
+                </div>
+                <div class="grid4" id="products">
+                    <article class="card" data-group="가족" data-name="마가렛토끼가족">
+                        <div class="photo">
+                            <img src="../image/store/가족/마가렛토끼가족.avif" alt="마가렛토끼가족" loading="lazy">
+                        </div>
+                        <p class="label">가족</p>
+                        <h2>마가렛토끼가족</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>마가렛토끼가족 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="가족" data-name="솜토끼가족">
+                        <div class="photo">
+                            <img src="../image/store/가족/솜토끼가족.avif" alt="솜토끼가족" loading="lazy">
+                        </div>
+                        <p class="label">가족</p>
+                        <h2>솜토끼가족</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>솜토끼가족 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="가족" data-name="웰시코기가족">
+                        <div class="photo">
+                            <img src="../image/store/가족/웰시코기가족.avif" alt="웰시코기가족" loading="lazy">
+                        </div>
+                        <p class="label">가족</p>
+                        <h2>웰시코기가족</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>웰시코기가족 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="가족" data-name="토이푸들가족">
+                        <div class="photo">
+                            <img src="../image/store/가족/토이푸들가족.avif" alt="토이푸들가족" loading="lazy">
+                        </div>
+                        <p class="label">가족</p>
+                        <h2>토이푸들가족</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>토이푸들가족 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="가족" data-name="해변토끼가족">
+                        <div class="photo">
+                            <img src="../image/store/가족/해변토끼가족.avif" alt="해변토끼가족" loading="lazy">
+                        </div>
+                        <p class="label">가족</p>
+                        <h2>해변토끼가족</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>해변토끼가족 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="집" data-name="등대하우스">
+                        <div class="photo">
+                            <img src="../image/store/집/등대하우스.avif" alt="등대하우스" loading="lazy">
+                        </div>
+                        <p class="label">집</p>
+                        <h2>등대하우스</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>등대하우스 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="집" data-name="엘레베이터하우스">
+                        <div class="photo">
+                            <img src="../image/store/집/엘레베이터하우스.avif" alt="엘레베이터하우스" loading="lazy">
+                        </div>
+                        <p class="label">집</p>
+                        <h2>엘레베이터하우스</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>엘레베이터하우스 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="집" data-name="이층집기프트세트">
+                        <div class="photo">
+                            <img src="../image/store/집/이층집기프트세트.avif" alt="이층집기프트세트" loading="lazy">
+                        </div>
+                        <p class="label">집</p>
+                        <h2>이층집기프트세트</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>이층집기프트세트 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="집" data-name="초록지붕엔틱하우스">
+                        <div class="photo">
+                            <img src="../image/store/집/초록지붕엔틱하우스.avif" alt="초록지붕엔틱하우스" loading="lazy">
+                        </div>
+                        <p class="label">집</p>
+                        <h2>초록지붕엔틱하우스</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>초록지붕엔틱하우스 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="집" data-name="통나무하우스">
+                        <div class="photo">
+                            <img src="../image/store/집/통나무하우스.avif" alt="통나무하우스" loading="lazy">
+                        </div>
+                        <p class="label">집</p>
+                        <h2>통나무하우스</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>통나무하우스 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="가구세트" data-name="놀이방가구세트">
+                        <div class="photo">
+                            <img src="../image/store/가구세트/놀이방가구세트.avif" alt="놀이방가구세트" loading="lazy">
+                        </div>
+                        <p class="label">가구세트</p>
+                        <h2>놀이방가구세트</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>놀이방가구세트 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="가구세트" data-name="디럭스거실세트">
+                        <div class="photo">
+                            <img src="../image/store/가구세트/디럭스거실세트.avif" alt="디럭스거실세트" loading="lazy">
+                        </div>
+                        <p class="label">가구세트</p>
+                        <h2>디럭스거실세트</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>디럭스거실세트 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="가구세트" data-name="소녀방세트">
+                        <div class="photo">
+                            <img src="../image/store/가구세트/소녀방세트.avif" alt="소녀방세트" loading="lazy">
+                        </div>
+                        <p class="label">가구세트</p>
+                        <h2>소녀방세트</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>소녀방세트 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="가구세트" data-name="스페셜욕실세트">
+                        <div class="photo">
+                            <img src="../image/store/가구세트/스페셜욕실세트.avif" alt="스페셜욕실세트" loading="lazy">
+                        </div>
+                        <p class="label">가구세트</p>
+                        <h2>스페셜욕실세트</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>스페셜욕실세트 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="가구세트" data-name="스페셜키친세트">
+                        <div class="photo">
+                            <img src="../image/store/가구세트/스페셜키친세트.avif" alt="스페셜키친세트" loading="lazy">
+                        </div>
+                        <p class="label">가구세트</p>
+                        <h2>스페셜키친세트</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>스페셜키친세트 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="소품" data-name="냉장고세트">
+                        <div class="photo">
+                            <img src="../image/store/소품/냉장고세트.avif" alt="냉장고세트" loading="lazy">
+                        </div>
+                        <p class="label">소품</p>
+                        <h2>냉장고세트</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>냉장고세트 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="소품" data-name="럭셔리tv세트">
+                        <div class="photo">
+                            <img src="../image/store/소품/럭셔리tv세트.avif" alt="럭셔리tv세트" loading="lazy">
+                        </div>
+                        <p class="label">소품</p>
+                        <h2>럭셔리tv세트</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>럭셔리tv세트 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="소품" data-name="식탁세트">
+                        <div class="photo">
+                            <img src="../image/store/소품/식탁세트.avif" alt="식탁세트" loading="lazy">
+                        </div>
+                        <p class="label">소품</p>
+                        <h2>식탁세트</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>식탁세트 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="소품" data-name="욕실세트">
+                        <div class="photo">
+                            <img src="../image/store/소품/욕실세트.avif" alt="욕실세트" loading="lazy">
+                        </div>
+                        <p class="label">소품</p>
+                        <h2>욕실세트</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>욕실세트 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="소품" data-name="키친세트">
+                        <div class="photo">
+                            <img src="../image/store/소품/키친세트.avif" alt="키친세트" loading="lazy">
+                        </div>
+                        <p class="label">소품</p>
+                        <h2>키친세트</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>키친세트 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="아기소품" data-name="아기곰흔들목마">
+                        <div class="photo">
+                            <img src="../image/store/아기소품/아기곰흔들목마.avif" alt="아기곰흔들목마" loading="lazy">
+                        </div>
+                        <p class="label">아기소품</p>
+                        <h2>아기곰흔들목마</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>아기곰흔들목마 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="아기소품" data-name="아기다람쥐자동차">
+                        <div class="photo">
+                            <img src="../image/store/아기소품/아기다람쥐자동차.avif" alt="아기다람쥐자동차" loading="lazy">
+                        </div>
+                        <p class="label">아기소품</p>
+                        <h2>아기다람쥐자동차</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>아기다람쥐자동차 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="아기소품" data-name="아기토끼유모차">
+                        <div class="photo">
+                            <img src="../image/store/아기소품/아기토끼유모차.avif" alt="아기토끼유모차" loading="lazy">
+                        </div>
+                        <p class="label">아기소품</p>
+                        <h2>아기토끼유모차</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>아기토끼유모차 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="아기소품" data-name="아기토끼의자">
+                        <div class="photo">
+                            <img src="../image/store/아기소품/아기토끼의자.avif" alt="아기토끼의자" loading="lazy">
+                        </div>
+                        <p class="label">아기소품</p>
+                        <h2>아기토끼의자</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>아기토끼의자 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                    <article class="card" data-group="아기소품" data-name="아기토끼피아노">
+                        <div class="photo">
+                            <img src="../image/store/아기소품/아기토끼피아노.avif" alt="아기토끼피아노" loading="lazy">
+                        </div>
+                        <p class="label">아기소품</p>
+                        <h2>아기토끼피아노</h2>
+                        <details>
+                            <summary>자세히 보기</summary>
+                            <p>아기토끼피아노 · 작은 세상을 꾸미는 실바니안 컬렉션입니다.</p>
+                        </details>
+                    </article>
+                </div>
+                <p id="empty" class="empty" hidden>검색 결과가 없어요. 다른 이름으로 찾아보세요.</p>
+            </section>
+
+            <!-- 스토리 배너 -->
+            <section class="section3 inner">
+                <img src="../image/store/하단섹션배너.png" alt="실바니안 친구들의 즐거운 하루" loading="lazy">
+                <div>
+                    <p class="label">MORE THAN A LITTLE TOY</p>
+                    <h2>
+                        작은 친구와 함께,
+                        <br>
+                        상상은 더 넓게
+                    </h2>
+                    <a class="button" href="story.html">친구들의 이야기 만나기</a>
+                </div>
+            </section>
+        </main>
+        <!-- 푸터 -->
+        <footer>
+            <div class="inner">
+                <div class="logo">
+                    <img src="../image/logo_sp.png" alt="실바니안 패밀리">
+                    <span>마음이 머무는 작은 세상</span>
+                </div>
+                <div>
+                    <a href="../sub/store.html">스토어</a>
+                    <a href="../sub/story.html">브랜드 이야기</a>
+                    <a href="#">맨 위로 ↑</a>
+                </div>
+            </div>
+            <div class="inner credit">
+                <small>© EPOCH · Sylvanian Families</small>
+            </div>
+        </footer>
+    </body>
+</html>
